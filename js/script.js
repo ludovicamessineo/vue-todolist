@@ -19,33 +19,40 @@ const app = new Vue (
         data: {
             toDo: [
                 {
-                    text: "Fare la spesa",
+                    text: "Fare la spesa 🛍️",
                     done: true,
                 },
                 {
-                    text: "Portare fuori il cane",
+                    text: "Portare fuori il cane 🐕",
                     done: false,
                 },
                 {
-                    text: "Fare la lavatrice",
+                    text: "Fare la lavatrice 🧼",
                     done: true,
                 },
                 {
-                    text: "Preparare la cena",
+                    text: "Preparare la cena 🍝",
                     done: false,
                 },
                 {
-                    text: "Andare al cinema",
+                    text: "Andare al cinema 🎥",
                     done: false,
-                }
+                },
             ],
+            newAction: "",
         },
 
         methods: {
             removeAction: function (index) {
                 this.toDo.splice(index, 1);
-            }
+            },
+
+            addAction: function () {
+                this.toDo.push(this.newAction),
+                this.newAction = "";
+            },
         }
+
 
     }
 );

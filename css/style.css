@@ -5,22 +5,55 @@
     box-sizing: border-box;
 }
 
+/* COMMON */
 body {
-    background-color: pink;
+    background-color: #B39CD0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 
 h1 {
     text-align: center;
     margin: 1rem;
+    color: #845EC2;
+}
+
+/* INPUT */
+.input-container {
+    text-align: center;
+    margin: 2rem;
+}
+
+input {
+    padding: .2rem .5rem;
+    border-radius: 10px;
+    border: 1px solid #845EC2;
+}
+
+button {
+    padding: .2rem .5rem;
+}
+
+/* LIST  */
+.list-container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #FBEAFF;
+}
+
+li {
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #845EC2;
+    color: #00C9A7;
 }
 
 .done {
     text-decoration: line-through;
 }
 
-li {
-    display: flex;
-    flex-grow: 1;
+.icon-container > i {
+    font-size: 1.5rem;
 }
-
