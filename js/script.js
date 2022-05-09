@@ -36,9 +36,16 @@ const app = new Vue (
                 },
                 {
                     text: "Andare al cinema",
-                    done: false
+                    done: false,
                 }
-            ]
+            ],
+        },
+
+        methods: {
+            removeAction: function (index) {
+                this.toDo.splice(index, 1);
+            }
         }
+
     }
 );

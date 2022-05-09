@@ -22,7 +22,7 @@
                 <li v-for="(item, index) in toDo" :class="item.done ? 'done' : '' ">
                     {{ item.text }}
                     <div class="icon-container">
-                        <i class="far fa-times-circle"></i>
+                        <i @click="removeAction(index)" class="far fa-times-circle"></i>
                     </div>
                 </li>
             </ul>
