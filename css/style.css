@@ -18,3 +18,9 @@ h1 {
 .done {
     text-decoration: line-through;
 }
+
+li {
+    display: flex;
+    flex-grow: 1;
+}
+

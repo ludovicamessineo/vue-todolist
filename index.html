@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 
 </head>
@@ -16,8 +19,11 @@
 
         <div class="list-container">
             <ul>
-                <li v-for="(item, index) in toDo" :class="done === true">
+                <li v-for="(item, index) in toDo" :class="item.done ? 'done' : '' ">
                     {{ item.text }}
+                    <div class="icon-container">
+                        <i class="far fa-times-circle"></i>
+                    </div>
                 </li>
             </ul>
         </div>

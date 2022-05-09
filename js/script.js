@@ -20,23 +20,23 @@ const app = new Vue (
             toDo: [
                 {
                     text: "Fare la spesa",
-                    done: "true",
+                    done: true,
                 },
                 {
                     text: "Portare fuori il cane",
-                    done: "false",
+                    done: false,
                 },
                 {
                     text: "Fare la lavatrice",
-                    done: "true",
+                    done: true,
                 },
                 {
                     text: "Preparare la cena",
-                    done: "false",
+                    done: false,
                 },
                 {
                     text: "Andare al cinema",
-                    done: "false"
+                    done: false
                 }
             ]
         }
